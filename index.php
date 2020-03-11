@@ -11,199 +11,82 @@
   </head>
   <body>
 
-    <header>
-
-      <nav class = "navbar navbar-default">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
         <div class = "container">
 
-          <div class="container">
+          <a class = "navbar-brand" href = "#">Quality File System</a>
 
-              <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                </button>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profolio</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                      <img src="images/image_1.jpg" class="d-block w-100" alt="...">
+                      <h2>Quality Filing At Its Best </h2>
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="images/image_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                      <div class="carousel-item">
+                      <img src="images/image_3.jpg" class="d-block w-100" alt="...">
+                    </div>
 
               </div>
 
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
 
-              <ul class="nav navbar-nav navbar-right">
+    </div>
 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-              </ul>
-
-            </div>
-          </div>
-
-          </nav>
-
-        </header>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class= "carousel-inner" role="listbox">
-              <div class= "item active">
-                <div class= "banner" style = "background-image: url(images/image_1.jpg);"></div>
-                <div class= "carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_2.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_3.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-            </div>
-          </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_3.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_4.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_5.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_6.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_7.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_8.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_9.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class= "banner" style = "background-image: url(images/image_10.jpg);"></div>
-                <div class="carousel-caption">
-
-                  <h2>Quality Filing System</h2>
-                  <h3>Best File System On Earth</h3>
-                  <p>Filing At Your Service</p>
-
-                </div>
-              </div>
-
-        </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            </div>
-
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-          </body>
-          </html>
+</body>
+</html>
