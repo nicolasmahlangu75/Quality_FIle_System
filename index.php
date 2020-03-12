@@ -128,7 +128,7 @@
                       <div class = "carousel-caption d-none d-md-block">
 
                         <h1>Top File Storage</h1>
-                          <p>Quality Filing At Its Best </p>
+                          <p>Powered by ICEP</p>
                             <p><a href = "#">About Us</a></p>
 
                       </div>
