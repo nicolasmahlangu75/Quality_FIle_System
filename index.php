@@ -38,6 +38,13 @@
             <a class="nav-link" href="#">Profolio</a>
           </li>
 
+          <li class="nav-item">
+                      <a class="nav-link" href="#">Sign-In</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="registration.php">Sign-Up</a>
+                    </li>
         </ul>
 
       </div>
