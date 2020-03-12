@@ -35,10 +35,6 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-          <li class="nav-item">
             <a class="nav-link" href="#">Profolio</a>
           </li>
 
@@ -58,19 +54,88 @@
               <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                      <img src="images/image_1.jpg" class="d-block w-100" alt="...">
-                      <h2>Quality Filing At Its Best </h2>
+
+                      <img src="images/image_1.jpg" class="d-block w-100" alt="..." >
+
+                      <div class = "carousel-caption d-none d-md-block">
+
+                        <h1>Top File Storage</h1>
+                          <p>Quality Filing At Its Best </p>
+                            <p><a href = "#">About Us</a></p>
+
+                      </div>
+
                     </div>
 
                     <div class="carousel-item">
+
                       <img src="images/image_2.jpg" class="d-block w-100" alt="...">
+
+                        <div class = "carousel-caption d-none d-md-block">
+
+                          <h1>Top File Storage</h1>
+                            <p>Quality Filing At Its Best </p>
+                              <p><a href = "#">About Us</a></p>
+                        </div>
+
                     </div>
 
                       <div class="carousel-item">
-                      <img src="images/image_3.jpg" class="d-block w-100" alt="...">
+
+                        <img src="images/image_3.jpg" class="d-block w-100" alt="...">
+
+                        <div class = "carousel-caption d-none d-md-block">
+
+                          <h1>Top File Storage</h1>
+                            <p>Quality Filing At Its Best </p>
+                              <p><a href = "#">About Us</a></p>
+
+                        </div>
+
                     </div>
 
-              </div>
+                    <div class="carousel-item">
+
+                      <img src="images/image_4.jpg" class="d-block w-100" alt="...">
+
+                      <div class = "carousel-caption d-none d-md-block">
+
+                        <h1>Top File Storage</h1>
+                          <p>Quality Filing At Its Best </p>
+                              <p><a href = "#">About Us</a></p>
+
+                      </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                          <img src="images/image_5.jpg" class="d-block w-100" alt="...">
+
+                          <div class = "carousel-caption d-none d-md-block">
+
+                            <h1>Top File Storage</h1>
+                              <p>Quality Filing At Its Best </p>
+                                <p><a href = "#">About Us</a></p>
+                          </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                      <img src="images/image_8.jpg" class="d-block w-100" alt="...">
+
+                      <div class = "carousel-caption d-none d-md-block">
+
+                        <h1>Top File Storage</h1>
+                          <p>Quality Filing At Its Best </p>
+                            <p><a href = "#">About Us</a></p>
+
+                      </div>
+
+                    </div>
+
+        </div>
 
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

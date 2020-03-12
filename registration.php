@@ -12,7 +12,7 @@
 
     <div class="register">
 
-      <img src="./images/reg.jpg" alt="icon" class="logo">
+      <img src="./images/image_2.jpg" alt="icon" class="logo">
 
     <form action="insert.php" method="post">
 
