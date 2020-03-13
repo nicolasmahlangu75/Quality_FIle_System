@@ -42,6 +42,21 @@ body{
 
 }
 
+#name {
+
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(247, 244, 244, 0.7);
+  color: #363636;
+  margin-top: 30px;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 16px;
+  transition: all 1.5s;
+
+}
+
 .email{
 
   border: none;
