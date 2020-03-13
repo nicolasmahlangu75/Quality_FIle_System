@@ -5,6 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initail-scale=1">
     <title>home</title>
 
+    <link rel = "stylesheet" href = "https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel = "stylesheet" href = "index.css">
 
@@ -65,9 +66,9 @@
 
                       <div class = "carousel-caption d-none d-md-block">
 
-                        <h1>Top File Storage</h1>
-                          <p>Quality Filing At Its Best </p>
-                            <p><a href = "#">About Us</a></p>
+                        <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                          <p class = "animated heartBeat" style = "animation-delay 9s">Quality Filing At Its Best </p>
+                            <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
 
                       </div>
 
@@ -79,9 +80,9 @@
 
                         <div class = "carousel-caption d-none d-md-block">
 
-                          <h1>Top File Storage</h1>
-                            <p>Quality Filing At Its Best </p>
-                              <p><a href = "#">About Us</a></p>
+                          <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                            <p class = "animated heartBeat" style = "animation-delay 9s">Quality Filing At Its Best </p>
+                              <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
                         </div>
 
                     </div>
@@ -92,9 +93,9 @@
 
                         <div class = "carousel-caption d-none d-md-block">
 
-                          <h1>Top File Storage</h1>
-                            <p>Quality Filing At Its Best </p>
-                              <p><a href = "#">About Us</a></p>
+                          <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                            <p class = "animated heartBeat" style = "animation-delay 9s">Quality Filing At Its Best </p>
+                              <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
 
                         </div>
 
@@ -106,9 +107,9 @@
 
                       <div class = "carousel-caption d-none d-md-block">
 
-                        <h1>Top File Storage</h1>
-                          <p>Quality Filing At Its Best </p>
-                              <p><a href = "#">About Us</a></p>
+                        <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                          <p class = "animated heartBeat" style = "animation-delay 9s">Quality Filing At Its Best </p>
+                              <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
 
                       </div>
 
@@ -120,9 +121,9 @@
 
                           <div class = "carousel-caption d-none d-md-block">
 
-                            <h1>Top File Storage</h1>
-                              <p>Quality Filing At Its Best </p>
-                                <p><a href = "#">About Us</a></p>
+                            <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                              <p class = "animated heartBeat" style = "animation-delay 9s">Quality Filing At Its Best </p>
+                                <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
                           </div>
 
                     </div>
@@ -133,9 +134,9 @@
 
                       <div class = "carousel-caption d-none d-md-block">
 
-                        <h1>Top File Storage</h1>
-                          <p>Powered by ICEP</p>
-                            <p><a href = "#">About Us</a></p>
+                        <h1 class = "animated bounceInRight" style = "animation-delay 11s">Top File Storage</h1>
+                          <p class = "animated heartBeat" style = "animation-delay 9s">Powered by ICEP</p>
+                            <p class = "animated rubberBand" style = "animation-delay 6s"><a href = "#">About Us</a></p>
 
                       </div>
 
