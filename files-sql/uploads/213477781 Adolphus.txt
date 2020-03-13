@@ -1,0 +1,42 @@
+Log Book
+******Febraury***********
+
+10 Feb
+started at ICEP. and joined a group working on Room Management System, and i was assigned to backend programing.
+i researched about nodejs and i learned nodejs comands and npm commands and also sysntax of javascript. 
+
+11 Feb
+
+my team and i attended a scrum session, i was assigned a task to develop a code to capture admin registration infor
+and stored it into a database, then i created the database on this day, for test cases.
+
+12 Feb
+
+i learned on how to connect database with middleware and managed to connect the middleware and my testing database.
+then we attended a reporting session to check on the progress of the system.
+
+13,14 Feb
+
+i started coding the code for  collecting information of the admin to the DB and deleting it from database.
+
+
+17 Feb
+
+i finished the code and made changes to it, so tha it can correctly connects to the database and sent the correct data to the database.
+
+18 Feb
+
+i added a code for retrieving data from the database for review, then i added a code for deleting all the data from the database and delete 
+using a field.
+
+19 Feb 
+
+i added another code for updating the existing data in the database.
+
+20 Feb
+
+i finilized the code, and uploaded it to git so that it can be marged with the rest of the code.
+
+21 Feb
+
+i was upsent to write  SSF24BT exit test.
