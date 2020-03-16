@@ -1,8 +1,8 @@
 <?php 
 $host = 'localhost';
-$user = 'roots';
+$user = 'root';
 $pass = '';
-$db = 'qtm';
+$db = 'new_file_database';
 
 
 $conn = new mysqli($host,$user,$pass,$db);
