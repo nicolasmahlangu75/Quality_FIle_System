@@ -16,7 +16,7 @@
 	<div class="header">
 	<h2>Register</h2>
 	</div>
-	
+	//
 		<form method="POST" action="register.php">
 		<!-- display validation errors here-->
 		<?php include('errors.php') ?>
