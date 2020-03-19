@@ -2,14 +2,6 @@
 
 $conn = mysqli_connect('localhost','root','','new_file_database');
 
-  if (mysqli_connect_error()) {
-
-    echo"Connection declined";
-
-  }else {
-    echo"Connection Successful";
-  }
-
         if (isset($_POST['btn-submit'])) {
 
                   $sql = "SELECT * FROM users WHERE email_address = '".$_POST["email_address"]."'";
@@ -27,7 +19,7 @@ $conn = mysqli_connect('localhost','root','','new_file_database');
                             if ($conn->query($sql) === TRUE) {
 
                                 echo"You have sucessfully registered!";
-
+                                header('location: login.php')
                             }
                             else {
 

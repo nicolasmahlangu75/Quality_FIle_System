@@ -1,6 +1,6 @@
 <?php
 // connection to database
-$conn = mysqli_connect("localhost","root","","login");
+$conn = mysqli_connect("localhost","root","","new_file_database");
 //check connection to database
     if($conn->connect_errno > 0)
     {

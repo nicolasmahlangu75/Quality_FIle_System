@@ -4,16 +4,19 @@ $error = '';
 
 if(isset($_POST["submit"]))
 {
-    
+
         // validate username empty
-        if(isset($_POST['username']) && empty($_POST['username']))
+        if(isset($_POST['email_address']) && empty($_POST['email_address']))
         {
-            $error .= "<div class='alert alert-danger text-center' role='alert'>Name is invalid, please try again.</div>";
+
+            $error .= "<div class='alert alert-danger text-center' role='alert'>Email address entered is invalid, please try again.</div>";
+
         }
         else
         {
+
             // validate
-            if(!preg_match("/^[a-zA-Z ]*$/", $_POST['username']))
+            if(!preg_match("/^[a-zA-Z ]*$/", $_POST['email_address']))
             {
             $error  .= "<div class='alert alert-success text-center' role='alert'>Name is valid.</div>";
             }
@@ -28,39 +31,52 @@ if(isset($_POST["submit"]))
                // validate
                if(!preg_match("/^[a-zA-Z ]*$/", $_POST['password']))
                {
-               $error  .= "<div class='alert alert-success text-center' role='alert'>'Password is valid.</div>";
+
+                 $error  .= "<div class='alert alert-success text-center' role='alert'>'Password is valid.</div>";
+
                }
+
            }
+
 }
- $username = $_POST["username"];
+
+ $username = $_POST["email_address"];
  $password = $_POST["password"];
 
  if(trim($username)!=""and trim($password)!= "")
  {
+
      //Sanitizes whatever is entered
      $username=stripcslashes($username);
      $password=stripcslashes($password);
-     $username=strip_tags($_POST["username"]);
+     $username=strip_tags($_POST["email_address"]);
      $password=strip_tags($_POST["password"]);
-     
+
      $username= mysqli_real_escape_string($conn,$username);
      $password= mysqli_real_escape_string($conn,$password);
 
      //SQL Query
-     $query = mysqli_query($conn,"SELECT * FROM users WHERE username='$username' AND password ='$password'");
+     $query = mysqli_query($conn,"SELECT * FROM users WHERE email_address ='$username' AND password ='$password'");
      //apply mysqli
      $numrows= mysqli_num_rows($query);
+
      if($numrows >0)
      {
-          //session username 
-         $_SESSION["username"]= $username; 
 
-        echo "Login successful";
+          //session username
+         $_SESSION["email_address"]= $username;
+
+              echo "Login successful";
+              header('location: files-sql/downloads.php');
+
         }
         else
         {
-        echo "Failed to login";
+
+              echo "Failed to login! Check if your password and email_address are valid";
+
         }
-        
+
    }
+
 ?>

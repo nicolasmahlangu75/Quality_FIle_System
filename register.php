@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <ul>
-  <li><a href="Home.php">Home</a></li>
-  <li><a href="Register.php">Register</a></li>
-  <li><a href="Login.php">Login</a></li>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="registration.php">Register</a></li>
+  <li><a href="login.php">Login</a></li>
   <li><a href="search_delete.php">Administrator</a></li>
 </ul>
 <head>
@@ -46,9 +46,9 @@
 				Already a member<a href="login.php" > LOGIN</a>
 				</p>
 				</div>
-				
+
 			</form>
-			
+
 </body>
 <div>
 <div>

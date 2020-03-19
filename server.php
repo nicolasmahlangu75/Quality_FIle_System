@@ -3,16 +3,16 @@
  $email = "";
  $errors = array();
  //connect to the daytabase
- 
- $db = mysqli_connect('localhost','root','','registration') or die($db);
- 
+
+ $db = mysqli_connect('localhost','root','','new_file_database') or die($db);
+
  //when the register button is clicked
  if(isset($_POST['register'])){
 	 $username = mysqli_real_escape_string($db, $_POST['username']);
 	 $email = mysqli_real_escape_string($db, $_POST['email']);
 	 $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
 	 $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
-	 
+
 	 //ensure that form fields are filled properly
 	 if(empty($username)){
 		array_push($errors, "Username is required"); // add error to erros array
@@ -34,5 +34,5 @@
 
 		}
  }
- 
+
  ?>

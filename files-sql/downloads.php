@@ -17,7 +17,7 @@
     <th>Action</th>
 </thead>
 <tbody>
-  <?php foreach ($files as $file): ?>
+  <?php foreach ($file as $file): ?>
     <tr>
       <td><?php echo $file['id']; ?></td>
       <td><?php echo $file['name']; ?></td>

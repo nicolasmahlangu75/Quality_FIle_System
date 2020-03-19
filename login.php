@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <ul>
-  <li><a href="Home.php">Home</a></li>
-  <li><a href="Register.php">Register</a></li>
-  <li><a href="Login.php">Login</a></li>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="registration.php">Register</a></li>
+  <li><a href="login.php">Login</a></li>
   <li><a href="search_delete.php">Administrator</a></li>
 </ul>
 <head>
@@ -19,27 +19,27 @@
 
 <div id="frm" class="container">
 	<form action="process.php" method="POST">
-	
+
 	<p>
-	<label> Username</label>
-	<input type="text" id="username" name="username" />
+	<label> Email</label>
+	<input type="text" id="email" name="email_address" />
 	</p>
-	
+
 	<p>
 	<label> Password</label>
 	<input type="password" id="password" name="password" />
 	</p>
-	
+
 	<p>
-	<input type="submit" id="btn" class="btn" value="LOGIN" />
+	<input type="submit" id="btn" class="login-btn" value="LOGIN" />
 	</p>
 
 	<p>
-	Create new Account <a href="register.php">Register</a>
+	Create new Account <a href="registration.php">Register</a>
 				</p>
 
 	</form>
-	
+
 </div>
 
 </body>
@@ -48,7 +48,7 @@
 <div>
 <div>
 
-<footer align="center" class="footer"> &copy ICEP </footer>
+<footer align="center" class="footer">Powered by ICEP  &copy  </footer>
 </div>
 </div>
 </html>

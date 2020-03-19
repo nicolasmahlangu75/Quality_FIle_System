@@ -1,9 +1,3 @@
-<?php
-
-  include('reg_validate.php');
-  
- ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
