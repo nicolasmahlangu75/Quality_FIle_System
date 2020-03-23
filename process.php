@@ -67,7 +67,7 @@ if(isset($_POST["submit"]))
          $_SESSION["email_address"]= $username;
 
               echo "Login successful";
-              header('location: files-sql/downloads.php');
+              header('location: files-sql/index.php');
 
         }
         else
