@@ -1,6 +1,6 @@
 <?php
 // connect to the database
-$conn = mysqli_connect('localhost', 'root', '', 'file_m');
+$conn = mysqli_connect('localhost', 'root', '', 'new_file_database');
 
 // Uploads files
 if (isset($_POST['save'])) { // if save button on the form is clicked
@@ -24,7 +24,7 @@ if (isset($_POST['save'])) { // if save button on the form is clicked
     } else {
         // move the uploaded (temporary) file to the specified destination
         if (move_uploaded_file($file, $destination)) {
-            $sql = "INSERT INTO files (name, size, downloads) VALUES ('$filename', $size, 0)";
+            $sql = "INSERT INTO files (file_name, size, downloads) VALUES ('$filename', $size, 0)";
             if (mysqli_query($conn, $sql)) {
                 echo "File uploaded successfully";
             }
@@ -40,13 +40,14 @@ if (isset($_GET['file_id'])) {
     $id = $_GET['file_id'];
 
     // fetch file to download from database
-    $sql = "SELECT * FROM files WHERE id=$id";
+    $sql = "SELECT * FROM files WHERE file_id=$id";
     $result = mysqli_query($conn, $sql);
 
     $file = mysqli_fetch_assoc($result);
     $filepath = 'uploads/' . $file['name'];
 
     if (file_exists($filepath)) {
+
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename=' . basename($filepath));
@@ -61,6 +62,7 @@ if (isset($_GET['file_id'])) {
         $updateQuery = "UPDATE files SET downloads=$newCount WHERE id=$id";
         mysqli_query($conn, $updateQuery);
         exit;
+
     }
 
 }

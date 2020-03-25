@@ -76,9 +76,13 @@
     <button type="submit" name ="btn-submit" class="btn-register">CREATE  NEW ACCOUNT</button>
     <button type="submit" class="btn-login">LOG IN NOW</button>
 
+
+      <footer>Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
+
   </form>
 
   </div>
+
 
   </body>
 </html>

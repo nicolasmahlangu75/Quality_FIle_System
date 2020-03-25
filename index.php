@@ -64,7 +64,7 @@
 
                         <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                           <p class = "animated heartBeat" style = "animation-delay 10s">Quality Filing At Its Best </p>
-                            <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                            <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
 
                       </div>
 
@@ -78,7 +78,7 @@
 
                           <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                             <p class = "animated heartBeat" style = "animation-delay 10s">Quality Filing At Its Best </p>
-                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
                         </div>
 
                     </div>
@@ -91,7 +91,7 @@
 
                           <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                             <p class = "animated heartBeat" style = "animation-delay 10s">Quality Filing At Its Best </p>
-                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
 
                         </div>
 
@@ -105,7 +105,7 @@
 
                         <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                           <p class = "animated heartBeat" style = "animation-delay 10s">Quality Filing At Its Best </p>
-                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                              <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
 
                       </div>
 
@@ -119,7 +119,7 @@
 
                             <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                               <p class = "animated heartBeat" style = "animation-delay 10s">Quality Filing At Its Best </p>
-                                <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                                <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
                           </div>
 
                     </div>
@@ -132,7 +132,7 @@
 
                         <h1 class = "animated bounceInRight" style = "animation-delay 15s">Top File Storage</h1>
                           <p class = "animated heartBeat" style = "animation-delay 10s">Powered by ICEP</p>
-                            <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "#">About Us</a></p>
+                            <p class = "animated rubberBand" style = "animation-delay 5s"><a href = "about.php">About Us</a></p>
 
                       </div>
 
@@ -152,6 +152,7 @@
 
     </div>
 
+            <footer>Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

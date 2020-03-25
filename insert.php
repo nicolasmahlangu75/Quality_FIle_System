@@ -19,7 +19,8 @@ $conn = mysqli_connect('localhost','root','','new_file_database');
                             if ($conn->query($sql) === TRUE) {
 
                                 echo"You have sucessfully registered!";
-                                header('location: login.php')
+                                header('location: login.php');
+                                
                             }
                             else {
 

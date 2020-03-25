@@ -90,5 +90,7 @@
 
                   </div>
 
+                    <footer>Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
+
   </body>
 </html>
