@@ -6,8 +6,9 @@
     <meta name = "viewport" content = "width=device-width, initail-scale=1">
     <title>about us</title>
     <link rel = "stylesheet" href = "https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://maxdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href = "abouts.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel = "stylesheet" href = "about.css">
 
     <title>about us</title>
 
@@ -23,18 +24,59 @@
 
     <div class="icons">
 
-      <ul>
+        <a class = "btn" href="https://facebook.com">
 
-        <li><i class="fa fa-facebook-official" aria-hidden = "true"</i>
-        </li>
+          <i class="fab fa-facebook-square"></i>
 
-        <li><i class="fa fa-whatsapp" aria-hidden = "true"></i></li>
-        <li><i class="fa fa-twitter" aria-hidden = "true"></i></li>
-        <li><i class="fab fa-instagram" aria-hidden = "true"></i></li>
-        <li><i class="fab fa-codepen" aria-hidden = "true"></i></li>
-        <li><i class="fab fa-github" aria-hidden = "true"></i></li>
+        </a>
 
-      </ul>
+        <a class = "btn" href="https://www.whatsapp.com">
+
+          <i class="fab fa-whatsapp"></i>
+
+        </a>
+
+        <a class = "btn" href="https://twitter.com">
+
+          <i class="fab fa-twitter"></i>
+
+        </a>
+
+        <a class = "btn" href="https://instagram.com">
+
+          <i class="fab fa-instagram" aria-hidden = "true"></i>
+
+        </a>
+
+        <a class = "btn" href="https://codepen.com">
+
+          <i class="fab fa-codepen" aria-hidden = "true"></i>
+
+        </a>
+
+        <a class = "btn" href="https://github.com">
+
+          <i class="fab fa-github" aria-hidden = "true"></i>
+
+        </a>
+
+        <a class = "btn" href="https://messenger.com">
+
+          <i class = "fab fa-facebook-messenger"></i>
+
+        </a>
+
+        <a class = "btn" href="https://googleplus.com">
+
+          <i class="fab fa-google-plus-g"></i>
+
+        </a>
+
+        <a class = "btn" href="https://youtube.com">
+
+          <i class="fab fa-youtube"></i>
+
+        </a>
 
     </div>
 
