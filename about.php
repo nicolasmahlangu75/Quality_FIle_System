@@ -25,9 +25,11 @@
 
       <ul>
 
-        <li><i class="fab fa-facebook-official" aria-hidden = "true"></i></li>
-        <li><i class="fab fa-whatsapp" aria-hidden = "true"></i></li>
-        <li><i class="fab fa-twitter" aria-hidden = "true"></i></li>
+        <li><i class="fa fa-facebook-official" aria-hidden = "true"</i>
+        </li>
+
+        <li><i class="fa fa-whatsapp" aria-hidden = "true"></i></li>
+        <li><i class="fa fa-twitter" aria-hidden = "true"></i></li>
         <li><i class="fab fa-instagram" aria-hidden = "true"></i></li>
         <li><i class="fab fa-codepen" aria-hidden = "true"></i></li>
         <li><i class="fab fa-github" aria-hidden = "true"></i></li>
