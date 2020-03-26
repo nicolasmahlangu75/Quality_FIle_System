@@ -80,7 +80,7 @@
 
     </div>
 
+    <footer class="footer">Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
 
-<footer>Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
   </body>
 </html>
