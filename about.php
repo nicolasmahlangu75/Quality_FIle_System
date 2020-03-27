@@ -19,7 +19,7 @@
 
       <h1 class = "animated bounceInRight" style = "animation-delay 15s">About Us</h1>
       <p class = "animated bounceInRight" style = "animation-delay 10s">QFS is a file management system that is designed specifically for TUT staff. Checkout the services page for more info.</p>
-
+      <p class = "animated bounceInRight" style = "animation-delay 10s">Proudly brought to you by ICEP</p>
     </div>
 
     <div class="icons">
