@@ -30,7 +30,7 @@ li a:hover {
 }
 body{
  margin: 0 auto;
- background-image: url("../image/filer.jpg");
+ //background-image: url("../image/filer.jpg");
  background-repeat: no-repeat;
  background-size: 100% 720px;
  background-color: white;
@@ -46,38 +46,40 @@ body{
  margin-top: 100px;
   border-radius: 25px;
   opacity:0.9;
+  border-color: black;
 }
  
-.container img{
+/*.container img{
  width: 150px;
  height: 150px;
  margin-top: -15px;
  
-}
+}*/
  
 input[type="text"],input[type="password"]{
- margin-top: -100px;
-  margin-left: 30px;
- height: 45px;
+ margin-top: -50px;
+  margin-left: 0px;
+ height: 30px;
  width: 300px;
- font-size: 18px;
- text-align:center;
- color: white;
- margin-bottom: 20px;
- background-color: black;
- border-radius: 25px;
-
+ font-size: 16px;
+ text-align: center;
+ color: black;
+ margin-bottom: 0px;
+border-radius:50px;
+ border-style: bold;
+ border-color:green;
 
 }
  
 .form-input::before{
  
  font-family: "FontAwesome";
- padding-left: 07px;
- padding-top: 20px;
+ padding-left: 5px;
+ padding-top: 30px;
  position: absolute;
  font-size: 35px;
- color: #2980b9; 
+ color: #2980b9;
+text-align: left; 
 }
  
 
@@ -97,8 +99,12 @@ input[type="text"],input[type="password"]{
   bottom: 0;
   width: 100%;
   background-color: green;
-  color: white;
-  text-align: center;
+  color: ;
+  text-align: black;
+}
+;
+.ruler {
+ color: green;
 }
 
 

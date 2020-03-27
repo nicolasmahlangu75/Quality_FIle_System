@@ -18,7 +18,7 @@
 
 
 <div id="frm" class="container">
-	<form action="login_process.php" method="POST">
+	<form action="adminlogin_process.php" method="POST">
 	<h1 ">Login</h1><br>
 
 	<br>

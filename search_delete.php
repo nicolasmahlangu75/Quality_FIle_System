@@ -5,17 +5,17 @@ $user = "root";
 $password = "";
 $database = "new_file_database";
 
-$firstname = "";
-$lastname = "";
-$idnumber = "";
-$email = "";
+$user_id = "";
+$first_name = "";
+$last_name = "";
+$id_number = "";
+$email_address = "";
 $gender = "";
-$countrycode = "";
-$phonenumber = "";
-$jobtitle = "";
+$phone_number = "";
+$job_title = "";
 $faculty = "";
-$password= "";
-$confirmpassword= "";
+$password = "";
+$confirm_Password= "";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -34,17 +34,19 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $posts = array();
-
-        $posts[0] = $_POST['firstname'];
-        $posts[1] = $_POST['lastname'];
-        $posts[2] = $_POST['idnumber'];
-        $posts[3] = $_POST['email_address'];
+		
+		$posts[0] = $_POST['user_id'];
+        $posts[1] = $_POST['first_name'];
+        $posts[2] = $_POST['last_name'];
+        $posts[3] = $_POST['id_number'];
+        $posts[4] = $_POST['email_address'];
         $posts[5] = $_POST['gender'];
-        $posts[6] = $_POST['countrycode'];
-        $posts[7] = $_POST['phonenumber'];
-        $posts[8] = $_POST['jobtitle'];
-        $posts[9] = $_POST['faculty'];
-        $posts[10] = $_POST['password'];
+        $posts[6] = $_POST['phone_number'];
+        $posts[7] = $_POST['job_title'];
+        $posts[8] = $_POST['faculty'];
+		 $posts[9] = $_POST['password'];
+        $posts[10] = $_POST['confirm_Password'];
+
 
         return $posts;
 
@@ -54,7 +56,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
         $data = getPosts();
 
-        $search_Query = "SELECT * FROM users WHERE email_address = $data[3]";
+        $search_Query = "SELECT * FROM users WHERE user_id = $data[0]";
 
         $search_Result = mysqli_query($connect, $search_Query);
 
@@ -67,17 +69,17 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 while($row = mysqli_fetch_array($search_Result))
                 {
 
-                    $firstname = $row['firstname'];
-                    $lastname = $row['lastname'];
-                    $idnumber = $row['idnumber'];
-                    $email = $row['email_address'];
+                    $first_name = $row['first_name'];
+                    $last_name = $row['last_name'];
+                    $id_number = $row['id_number'];
+                    $email_address = $row['email_address'];
                     $gender = $row['gender'];
-                    $countrycode = $row['countrycode'];
-                    $phonenumber = $row['phonenumber'];
-                    $jobtitle = $row['jobtitle'];
+                    $phone_number = $row['phone_number'];
+                    $job_title = $row['job_title'];
                     $faculty = $row['faculty'];
-                    $password = $row['password'];
-                    $confirmpassword = $row['confirmpassword'];
+					$password = $row['password'];
+					$confirm_Password=$row['confirm_Password'];
+                    
 
                 }
 
@@ -94,11 +96,11 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     }
 
-    if(isset($_POST['insert']))
+   /* if(isset($_POST['insert']))
     {
 
         $data = getPosts();
-        $insert_Query = "INSERT INTO `users'(`firstname`, `lastname`, `idnumber`,`email_address`, `gender`, `countrycode`, `phonenumber`, `jobtitle`, `faculty`, `password`, `confirmPassword`) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]')";
+        $insert_Query = "INSERT INTO `users`(`first_name`, `last_name`, `id_number`,`email_address`, `gender`,`phone_number`, `job_title`, `faculty`, `password`, `confirm_Password`) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]')";
 
         try{
 
@@ -128,13 +130,13 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     }
 
-
+*/
     if(isset($_POST['delete']))
     {
 
         $data = getPosts();
 
-        $delete_Query = "DELETE FROM `users` WHERE `email_address` = $data[3]";
+        $delete_Query = "DELETE FROM users WHERE `user_id` = $data[0]";
 
         try{
 
@@ -166,7 +168,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $data = getPosts();
-        $update_Query = "UPDATE `users` SET `firstname`='$data[0]',`lastname`='$data[1]',`idnumber`='$data[2]',`email_address`='$data[3]',`gender`='$data[4]',`countrycode`='$data[5]',`phonenumber`='$data[6]',`jobtitle`='$data[7]',`faculty`='$data[8]',`password`='$data[9]',`confirmpassword`='$data[10]' WHERE `id` = $data[0]";
+        $update_Query = "UPDATE `users` SET `firstname`='$data[0]',`lastname`='$data[1]',`idnumber`='$data[2]',`email_address`='$data[3]',`gender`='$data[4]',`phonenumber`='$data[5]',`jobtitle`='$data[6]',`faculty`='$data[7]',`password`='$data[8]',`confirm_Password`='$data[9]' WHERE `user_id` = $data[0]";
 
         try{
 
@@ -195,7 +197,6 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         }
 
     }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -203,7 +204,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
   <li><a href="index.php">Home</a></li>
   <li><a href="registration.php">Register</a></li>
   <li><a href="login.php">Login</a></li>
-  <li><a href="search_delete.php">Administrator</a></li>
+  <li><a href="adminlogin.php">Administrator Login</a></li>
 </ul><br><br>
     <head>
         <title>Records</title>
@@ -211,32 +212,37 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     </head>
 
     <div class = "container">
-    <img src="image/crud.png" height="10%" width="10%"/>
+ 
 
     <body>
 
         <form action="search_delete.php" method="POST">
 
     <br>
+	<div class="input">
 
-        <input type="text" name="firstname" placeholder="firstname" value="<?php echo $firstname; ?>"><br><br>
-        <input type="text" name="lastname" placeholder="lastname" value="<?php echo $lastname; ?>"><br><br>
-        <input type="text" name="idnumber" placeholder="idnumber" value="<?php echo $idnumber; ?>"><br><br>
-
-        <input type="text" name="gender" placeholder="gender" value="<?php echo $gender; ?>"><br><br>
-        <input type="text" name="countrycode" placeholder="countrycode" value="<?php echo $countrycode; ?>"><br><br>
-        <input type="text" name="phonenumber" placeholder="phonenumber" value="<?php echo $phonenumber; ?>"><br><br>
-        <input type="text" name="jobtitle" placeholder="jobtitle" value="<?php echo $jobtitle; ?>"><br><br>
-        <input type="text" name="faculty" placeholder="faculty" value="<?php echo $faculty; ?>"><br><br>
-        <input type="text" name="password" placeholder="password" value="<?php echo $password; ?>"><br><br>
-        <input type="text" name="confirmpassword" placeholder="confirmpassword" value="<?php echo $confirmpassword; ?>"><br><br>
-
-        <div>
-        <input type="submit" name="insert" value="Add">
-        <input type="submit" name="update" value="Update">
+	<fieldset>
+	
+		<label>User_ID</label><input type="text" name="user_id" placeholder="user id"  value="<?php echo $user_id; ?>"><br><br>
+        <label>First name</label><input type="text" name="first_name" placeholder="first name" value="<?php echo $first_name; ?>"><br><br>
+        <label>Last name</label><input type="text" name="last_name" placeholder="last name" value="<?php echo $last_name; ?>"><br><br>
+        <label>Id number</label><input type="text" name="id_number" placeholder="id number" value="<?php echo $id_number; ?>"><br><br>
+		<label>Email</label><input type="text" name="email_address" placeholder="email address" value="<?php echo $email_address; ?>"><br><br>
+       	<label>Gender</label><input type="text" name="gender" placeholder="gender" value="<?php echo $gender; ?>"><br><br>
+	   <label>Contact</label><input type="text" name="phone_number" placeholder="phone number" value="<?php echo $phone_number; ?>"><br><br>
+        <label>Job title</label><input type="text" name="job_title" placeholder="job title" value="<?php echo $job_title; ?>"><br><br>
+        <label>Faculty</label><input type="text" name="faculty" placeholder="faculty" value="<?php echo $faculty; ?>"><br><br>
+		 <label>Password</label><input type="password" name="password" placeholder="password" value="<?php echo $password; ?>"><br><br>
+	      <label>Confirm Pass</label><input type="password" name="confirm_Password" placeholder="confirm_Password" value="<?php echo $confirm_Password; ?>"><br><br>
+		  <input type="submit" name="update" value="Update">
         <input type="submit" name="delete" value="Delete">
         <input type="submit" name="search" value="Find">
-        </div>
+	</fieldset>
+	</div>
+        
+     
+
+        
 
         </div>
     </body>
