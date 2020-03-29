@@ -5,14 +5,14 @@ $user = "root";
 $password = "";
 $database = "new_file_database";
 
-$firstname = "";
-$lastname = "";
-$idnumber = "";
-$email = "";
+$first_name = "";
+$last_name = "";
+$id_number = "";
+$email_address = "";
 $gender = "";
 $countrycode = "";
-$phonenumber = "";
-$jobtitle = "";
+$phone_number = "";
+$job_title = "";
 $faculty = "";
 $password= "";
 $confirmpassword= "";
@@ -35,14 +35,14 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
         $posts = array();
 
-        $posts[0] = $_POST['firstname'];
-        $posts[1] = $_POST['lastname'];
-        $posts[2] = $_POST['idnumber'];
+        $posts[0] = $_POST['first_name'];
+        $posts[1] = $_POST['last_name'];
+        $posts[2] = $_POST['id_number'];
         $posts[3] = $_POST['email_address'];
         $posts[5] = $_POST['gender'];
-        $posts[6] = $_POST['countrycode'];
-        $posts[7] = $_POST['phonenumber'];
-        $posts[8] = $_POST['jobtitle'];
+        $posts[6] = $_POST['country_code'];
+        $posts[7] = $_POST['phone_number'];
+        $posts[8] = $_POST['job_title'];
         $posts[9] = $_POST['faculty'];
         $posts[10] = $_POST['password'];
 
@@ -67,14 +67,14 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 while($row = mysqli_fetch_array($search_Result))
                 {
 
-                    $firstname = $row['firstname'];
-                    $lastname = $row['lastname'];
-                    $idnumber = $row['idnumber'];
+                    $firstname = $row['first_name'];
+                    $lastname = $row['last_name'];
+                    $idnumber = $row['id_number'];
                     $email = $row['email_address'];
                     $gender = $row['gender'];
-                    $countrycode = $row['countrycode'];
-                    $phonenumber = $row['phonenumber'];
-                    $jobtitle = $row['jobtitle'];
+                    $countrycode = $row['country_code'];
+                    $phonenumber = $row['phone_number'];
+                    $jobtitle = $row['job_title'];
                     $faculty = $row['faculty'];
                     $password = $row['password'];
                     $confirmpassword = $row['confirmpassword'];
@@ -98,7 +98,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $data = getPosts();
-        $insert_Query = "INSERT INTO `users'(`firstname`, `lastname`, `idnumber`,`email_address`, `gender`, `countrycode`, `phonenumber`, `jobtitle`, `faculty`, `password`, `confirmPassword`) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]')";
+        $insert_Query = "INSERT INTO `users'(`first_name`, `last_name`, `id_number`,`email_address`, `gender`, `country_code`, `phone_number`, `job_title`, `faculty`, `password`, `confirmPassword`) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]')";
 
         try{
 
@@ -166,7 +166,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $data = getPosts();
-        $update_Query = "UPDATE `users` SET `firstname`='$data[0]',`lastname`='$data[1]',`idnumber`='$data[2]',`email_address`='$data[3]',`gender`='$data[4]',`countrycode`='$data[5]',`phonenumber`='$data[6]',`jobtitle`='$data[7]',`faculty`='$data[8]',`password`='$data[9]',`confirmpassword`='$data[10]' WHERE `id` = $data[0]";
+        $update_Query = "UPDATE `users` SET `first_name`='$data[0]',`last_name`='$data[1]',`id_number`='$data[2]',`email_address`='$data[3]',`gender`='$data[4]',`country_code`='$data[5]',`phone_number`='$data[6]',`job_title`='$data[7]',`faculty`='$data[8]',`password`='$data[9]',`confirmpassword`='$data[10]' WHERE `id` = $data[0]";
 
         try{
 
