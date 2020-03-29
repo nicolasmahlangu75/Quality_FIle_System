@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2020 at 01:16 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.26
+-- Generation Time: Mar 26, 2020 at 09:57 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `new_file_database`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `files`
+--
+
+CREATE TABLE `files` (
+  `file_id` int(255) NOT NULL,
+  `file_name` varchar(255) NOT NULL,
+  `size` varchar(255) NOT NULL,
+  `downloads` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `files`
+--
+
+INSERT INTO `files` (`file_id`, `file_name`, `size`, `downloads`) VALUES
+(1, '215726487.pdf', '11771', 0);
 
 -- --------------------------------------------------------
 
@@ -56,11 +76,19 @@ INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `id_number`, `email_a
 (347, 'Nicholas', 'Mahlangu', '9104125703080', 'nicolasmahlangu12@gmail.com', 'Male', '624457716', 'Dean', '-Select-', 'march'),
 (348, 'Nick', 'Skhosana', '565623565624', 'nick@gmail.com', 'Others', '711218836', 'Lecturer', 'SCIENCE', 'nick@75'),
 (349, 'Nick', 'Skhosana', '565623565624', 'nicknac@gmail.com', 'Others', '711218836', 'Lecturer', 'SCIENCE', 'me'),
-(350, 'mathew', 'malatji', '121457575', 'ghfhgf@gmail.com', 'Male', '021454647867', 'Dean', 'ICT', '1234');
+(350, 'mathew', 'malatji', '121457575', 'ghfhgf@gmail.com', 'Male', '021454647867', 'Dean', 'ICT', '1234'),
+(351, 'Nicole', 'Williams', '9904125703080', 'nicoleW@gmail.com', 'Male', '711218836', 'Dean', 'HUMANITIES', 'nicole'),
+(352, 'Mpuse', 'Mahlangu', '9104125703080', 'nicolasmahlangu9@gmail.com', 'Male', '0711218836', 'Dean', 'SCIENCE', 'mpuse75');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`file_id`);
 
 --
 -- Indexes for table `users`
@@ -73,10 +101,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `file_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=351;
+  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=353;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
