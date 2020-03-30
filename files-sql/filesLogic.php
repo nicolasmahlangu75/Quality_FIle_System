@@ -5,7 +5,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'new_file_database');
 // Uploads files
 if (isset($_POST['save'])) { // if save button on the form is clicked
     // name of the uploaded file
-    $filename = $_FILES['myfile']['name'];
+    $filename = $_FILES['myfile']['file_name'];
 
     // destination of the file on the server
     $destination = 'uploads/' . $filename;
@@ -44,7 +44,7 @@ if (isset($_GET['file_id'])) {
     $result = mysqli_query($conn, $sql);
 
     $file = mysqli_fetch_assoc($result);
-    $filepath = 'uploads/' . $file['name'];
+    $filepath = 'uploads/' . $file['file_name'];
 
     if (file_exists($filepath)) {
 
@@ -54,12 +54,12 @@ if (isset($_GET['file_id'])) {
         header('Expires: 0');
         header('Cache-Control: must-revalidate');
         header('Pragma: public');
-        header('Content-Length: ' . filesize('uploads/' . $file['name']));
-        readfile('uploads/' . $file['name']);
+        header('Content-Length: ' . filesize('uploads/' . $file['file_name']));
+        readfile('uploads/' . $file['file_name']);
 
         // Now update downloads count
         $newCount = $file['downloads'] + 1;
-        $updateQuery = "UPDATE files SET downloads=$newCount WHERE id=$id";
+        $updateQuery = "UPDATE files SET downloads=$newCount WHERE file_id=$id";
         mysqli_query($conn, $updateQuery);
         exit;
 

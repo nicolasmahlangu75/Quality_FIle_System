@@ -20,7 +20,7 @@ $conn = mysqli_connect('localhost','root','','new_file_database');
 
                                 echo"You have sucessfully registered!";
                                 header('location: login.php');
-                                
+
                             }
                             else {
 
