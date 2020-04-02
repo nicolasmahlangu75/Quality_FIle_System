@@ -34,6 +34,10 @@
 	<input type="submit" id="btn" class="login-btn" value="LOGIN" />
 	</p>
 
+  <p>
+   <a href="adminlogin.php">Admin-Login</a>
+  </p>
+
 	<p>
 	Create new Account <a href="registration.php">Register</a>
 				</p>

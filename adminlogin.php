@@ -4,7 +4,6 @@
   <li><a href="index.php">Home</a></li>
   <li><a href="registration.php">Register</a></li>
   <li><a href="login.php">Login</a></li>
-  <li><a href="adminlogin.php">Administrator Login</a></li>
 </ul>
 <head>
 <title>Login</title>

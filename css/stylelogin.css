@@ -35,7 +35,7 @@ body{
  background-size: 100% 720px;
  background-color: white;
 }
- 
+
 .container{
  width: 500px;
  height: 300px;
@@ -47,14 +47,14 @@ body{
   border-radius: 25px;
   opacity:0.9;
 }
- 
+
 .container img{
  width: 150px;
  height: 150px;
  margin-top: -15px;
- 
+
 }
- 
+
 input[type="text"],input[type="password"]{
  margin-top: -100px;
   margin-left: 30px;
@@ -69,19 +69,19 @@ input[type="text"],input[type="password"]{
 
 
 }
- 
+
 .form-input::before{
- 
+
  font-family: "FontAwesome";
  padding-left: 07px;
  padding-top: 20px;
  position: absolute;
  font-size: 35px;
- color: #2980b9; 
+ color: #2980b9;
 }
- 
 
- 
+
+
 .btn{
  padding: 15px 25px;
  border: none;
@@ -89,6 +89,17 @@ input[type="text"],input[type="password"]{
  color: #fff;
  border-radius: 25px;
  width: 150px;
+}
+
+.adminLogin{
+
+  padding: 15px 25px;
+  border: none;
+  background-color: green;
+  color: #fff;
+  border-radius: 25px;
+  width: 150px;
+
 }
 
 .footer {
@@ -100,6 +111,3 @@ input[type="text"],input[type="password"]{
   color: white;
   text-align: center;
 }
-
-
-

@@ -1,11 +1,8 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	
+
 }
-
-
-
 
 body{
 	font-size: 120%;
@@ -35,7 +32,7 @@ form{
 	border: 1px solid #b0c4de;
 	background: white;
 	border-radius: 0px 0px 10px 10px;
-	
+
 }
 
 .input-group{
@@ -96,4 +93,3 @@ form{
   .echo{
 	  font-size: 150%;
   }
-
