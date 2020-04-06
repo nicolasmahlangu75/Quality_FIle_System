@@ -4,7 +4,7 @@
   <li><a href="index.php">Home</a></li>
   <li><a href="registration.php">Register</a></li>
   <li><a href="login.php">Login</a></li>
-  <li><a href="search_delete.php">Administrator</a></li>
+  <li><a href="addLecture.php">Administrator</a></li>
 </ul>
 <head>
 <title>Login</title>
@@ -31,8 +31,10 @@
 	</p>
 
 	<p>
-	<input type="submit" id="btn" class="login-btn" value="LOGIN" />
-	</p>
+
+	   <input type="submit" id="btn" class="login-btn" value="LOGIN" />
+
+  </p>
 
   <p>
    <a href="adminlogin.php">Admin-Login</a>
