@@ -18,7 +18,7 @@
 
       <h1>Register new account</h1>
 
-
+      <input type="text" name="staff_number" placeholder="Staff Number" required><br><br>
       <input type="text" name="first_name" placeholder="First_name" required><br><br>
       <input type="text" name = "last_name" placeholder="Last_name"><br><br>
       <input type="text" name="id_number" placeholder="ID number"><br><br>
