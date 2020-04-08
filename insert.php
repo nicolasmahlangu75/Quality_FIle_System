@@ -8,12 +8,30 @@ $conn = mysqli_connect('localhost','root','','new_file_database');
 
                   $result = $conn->query($sql);
 
-                  $staff_test = "SELECT * FROM staff WHERE staff_number = '".$_POST["staff_number"]."'";
-                  $staff_result = $conn->query($staff_test);
+                  $staff_number = "SELECT * FROM staff WHERE staff_number = '".$_POST["staff_number"]."'";
+                  $staff_result = $conn->query($staff_number);
 
-                      if ($result->num_rows > 0 && $staff_result->num_rows > 0) {
+                  $id_number = "SELECT * FROM users WHERE id_number = '".$_POST["id_number"]."'";
+                  $id_result = $conn->query($id_number);
 
-                        die("Sorry, your e-mail and staff number already exists in our database!");
+                  $phone_number = "SELECT * FROM users WHERE phone_number = '".$_POST["phone_number"]."'";
+                  $phone_result = $conn->query($phone_number);
+
+                      if ($result->num_rows > 0) {
+
+                        echo("Sorry, your e-mail address already exists in our database!");
+
+                      }elseif ($staff_result->num_rows > 0) {
+
+                          echo("Staff number you entered is already taken!");
+
+                      }elseif ($phone_result->num_rows > 0) {
+
+                          echo("Phone number already exists!");
+
+                      }elseif ($id_result->num_rows > 0) {
+
+                          die("ID number entered already exist!");
 
                       }else{
 
