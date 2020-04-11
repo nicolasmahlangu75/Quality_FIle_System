@@ -16,6 +16,7 @@ $job_title = "";
 $faculty = "";
 $password = "";
 $confirm_Password= "";
+$staff_no = "";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -46,6 +47,9 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $posts[8] = $_POST['faculty'];
 		 $posts[9] = $_POST['password'];
         $posts[10] = $_POST['confirm_Password'];
+		
+		
+		$posts[1] = $_POST['staff_number'];
 
 
         return $posts;
@@ -197,6 +201,41 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         }
 
     }
+	
+	if(isset($_POST['add']))
+    {
+
+        $data = getPosts();
+        $insert_Query = "INSERT INTO `staff`(`staff_no`) VALUES ('$data[1]')";
+
+        try{
+
+            $insert_Result = mysqli_query($connect, $insert_Query);
+
+                if($insert_Result)
+                {
+
+                    if(mysqli_affected_rows($connect) > 0)
+                    {
+
+                        echo 'Staff number successfully inserted';
+
+                    }else{
+
+                        echo 'Staff number could not be inserted ';
+
+                    }
+
+                }
+
+        }catch(Exception $ex){
+
+            echo 'Error Insert'.$ex->getMessage();
+
+        }
+
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -237,6 +276,14 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 		  <input type="submit" name="update" value="Update">
         <input type="submit" name="delete" value="Delete">
         <input type="submit" name="search" value="Find">
+	
+	<hr color="red">
+	<h2>Add new staff number to the database</h2>
+	<label>Staff number</label><input type="text" name="staff_number" >
+	<br><br><input type="submit" name="add" value="Add">
+
+	
+	
 	</fieldset>
 	</div>
         
