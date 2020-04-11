@@ -18,11 +18,66 @@
 
       <h1>Register new account</h1>
 
-      <input type="text" name="staff_number" placeholder="Staff Number" required><br><br>
-      <input type="text" name="first_name" placeholder="First_name" required><br><br>
-      <input type="text" name = "last_name" placeholder="Last_name"><br><br>
-      <input type="text" name="id_number" placeholder="ID number"><br><br>
-      <input type="email" name="email_address" class="email" placeholder="E-mail address"><br><br>
+      <?php
+
+                  if (isset($_GET['staff_number'])) {
+
+                      $staff_number = $_GET['staff_number'];
+                      //if a value for stuff number was entered, the staff number will still appear if something goes wrong in the process of filling in the registration form.
+                      echo '<input type="text" name="staff_number" placeholder="Staff Number" value = "'.$staff_number.'">';
+
+                  }else {
+
+                      //this is just to make sure that the value for first_name will remain empty if nothing was enetered.
+                      echo '<input type="text" name="staff_number" placeholder="Staff Number">';
+
+                  }
+
+
+                  if (isset($_GET['first_name'])) {
+
+                    $first_name = $_GET['first_name'];
+                    //if a value for first name was entered, the staff number will still appear if something goes wrong in the process of filling in the registration form.
+                    echo '<input type="text" name="first_name" placeholder="First_name" value = "'.$first_name.'">';
+
+                  }else {
+
+                      //this is just to make sure that the value for first_name will remain empty if nothing was enetered.
+                      echo '<input type="text" name="first_name" placeholder="First_name">';
+
+                  }
+
+
+                  if (isset($_GET['last_name'])) {
+
+                    $last_name = $_GET['last_name'];
+                    //if a value for last name was entered, the staff number will still appear if something goes wrong in the process of filling in the registration form.
+                    echo '<input type="text" name="last_name" placeholder="Last_name" value = "'.$last_name.'">';
+
+                  }else {
+
+                      //this is just to make sure that the value for first_name will remain empty if nothing was enetered.
+                      echo '<input type="text" name="last_name" placeholder="Last_name">';
+
+                  }
+
+                  if (isset($_GET['id_number'])) {
+
+                    $id_number = $_GET['id_number'];
+                    //if a value for id number was entered, the staff number will still appear if something goes wrong in the process of filling in the registration form.
+                    echo '<input type="text" name="id_number" placeholder="ID number" value = "'.$id_number.'">';
+
+                  }else {
+
+                      //this is just to make sure that the value for first_name will remain empty if nothing was enetered.
+                      echo '<input type="text" name="id_number" placeholder="ID number">';
+
+                  }
+
+
+       ?>
+
+      <input type="email" class = "email" name="email_address" placeholder="E-mail address"><br>
 
       Gender:  <select name = "gender" class="gender_type" required>
 
@@ -43,7 +98,7 @@
         <option>+97</option>
         <option>+95</option>
 
-        <input type="text" name="phone_number" id="name" placeholder="Phone_number" required ="required *"><br><br>
+        <input type="text" name="phone_number" id="name" placeholder="Phone_number"><br><br>
 
     </select><br><br>
 
@@ -68,18 +123,57 @@
 
               </select><br><br>
 
-    <input type="password" name="password" id="name" placeholder="Password" required ="required *"><br><br>
+    <input type="password" name="password" id="name" placeholder="Password"><br><br>
     <input type="checkbox" onclick="myFunction()">Show password
-    <input type="password" name="conPas" id="name" placeholder="Confirm Password" required ="required *"><br><br><br>
+    <input type="password" name="conPas" id="name" placeholder="Confirm Password"><br><br><br>
 
     <input type ="checkbox" id = "check"><span id ="check" required>I agree to all terms and conditions.</span><br><br>
-    <button type="submit" name ="btn-submit" class="btn-register">CREATE  NEW ACCOUNT</button>
-    <button type="submit" class="btn-login">LOG IN NOW</button>
-
+    <button type="submit" name ="btn-submit" class="btn-register">CREATE  NEW ACCOUNT</button><br><br>
 
       <footer>Page by <a href="https://github.com/nicolasmahlangu75">Nicholas</a></footer>
 
   </form>
+
+      <?php
+
+            if (!isset($_GET['signup'])) {
+
+              exit();
+
+            }else {
+
+              //the name of the variable used to check for errors.
+              $signupCheck = $_GET['signup'];
+
+                //error message for unoccupied fields
+                if ($signupCheck == 'empty') {
+
+                    echo"<script>alert('You did not fill in all fields!');</script>";
+                    exit();
+
+                }//error message for entering numbers in the first_name and last_name fields.
+                elseif ($signupCheck == 'char') {
+
+                    echo"<script>alert('You used invalid characters!');</script>";
+                    exit();
+
+                }//error message for invalid email_address.
+                elseif ($signupCheck == 'email') {
+
+                    echo"<script>alert('You used an invalid email!');</script>";
+                    exit();
+
+                }//message displayed if there's no error found in the code.
+                elseif ($signupCheck == 'success') {
+
+                  echo"<script>alert('You have successfully registered!');</script>";
+                  exit();
+
+                }
+
+            }
+
+        ?>
 
   </div>
 

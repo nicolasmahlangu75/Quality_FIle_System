@@ -196,32 +196,6 @@ body{
 
 }
 
-.btn-login{
-
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 30px;
-  padding: 10px 10px;
-  color: rgba(247,244,244,0.8);
-  border: 1px solid green;
-  border-radius: 6px;
-  background: #363636;
-
-}
-
-.btn-login:hover{
-
-  background: green;
-
-}
-
-.btn-login{
-
-  margin: 10px;
-
-}
-
 h1{
 
   color: green;
