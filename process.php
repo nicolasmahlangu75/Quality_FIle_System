@@ -56,7 +56,7 @@ if(isset($_POST["submit"]))
      $password= mysqli_real_escape_string($conn,$password);
 
      //SQL Query
-
+     $password = md5('password');
      $query = mysqli_query($conn,"SELECT * FROM users WHERE email_address ='$username' AND password ='$password'");
      //apply mysqli
      $numrows= mysqli_num_rows($query);

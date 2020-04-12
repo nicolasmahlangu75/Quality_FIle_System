@@ -60,9 +60,9 @@ $conn = mysqli_connect('localhost','root','','new_file_database');
 
                               echo"<script>alert('Sorry, your e-mail address already exists in our database!');</script>";
 
-                            }elseif ($staff_result->num_rows > 0) {
+                            }elseif ($staff_result->num_rows < 0) {
 
-                                echo"<script>alert('Staff number you entered is already taken!');</script>";
+                                echo"<script>alert('Staff number you entered does not exist in our database!');</script>";
 
                             }elseif ($phone_result->num_rows > 0) {
 
