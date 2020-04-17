@@ -36,7 +36,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
         $posts = array();
 
-		$posts[0] = $_POST['user_id'];
+		    $posts[0] = $_POST['user_id'];
         $posts[1] = $_POST['first_name'];
         $posts[2] = $_POST['last_name'];
         $posts[3] = $_POST['id_number'];
@@ -45,11 +45,10 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $posts[6] = $_POST['phone_number'];
         $posts[7] = $_POST['job_title'];
         $posts[8] = $_POST['faculty'];
-		 $posts[9] = $_POST['password'];
+		    $posts[9] = $_POST['password'];
         $posts[10] = $_POST['confirm_Password'];
 
 
-		$posts[1] = $_POST['staff_number'];
 
 
         return $posts;
@@ -81,8 +80,8 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                     $phone_number = $row['phone_number'];
                     $job_title = $row['job_title'];
                     $faculty = $row['faculty'];
-					$password = $row['password'];
-					$confirm_Password=$row['confirm_Password'];
+					          $password = $row['password'];
+					          $confirm_Password=$row['confirm_Password'];
 
 
                 }
@@ -157,7 +156,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $data = getPosts();
-        $update_Query = "UPDATE `users` SET `firstname`='$data[0]',`lastname`='$data[1]',`idnumber`='$data[2]',`email_address`='$data[3]',`gender`='$data[4]',`phonenumber`='$data[5]',`jobtitle`='$data[6]',`faculty`='$data[7]',`password`='$data[8]',`confirm_Password`='$data[9]' WHERE `user_id` = $data[0]";
+        $update_Query = "UPDATE `users` SET `first_name`='$data[1]',`last_name`='$data[2]',`id_number`='$data[3]',`email_address`='$data[4]',`gender`='$data[5]',`phone_number`='$data[6]',`job_title`='$data[7]',`faculty`='$data[8]',`password`='$data[9]' WHERE `user_id` = $data[0]";
 
         try{
 
