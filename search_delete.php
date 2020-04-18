@@ -47,7 +47,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $posts[8] = $_POST['faculty'];
 		    $posts[9] = $_POST['password'];
         $posts[10] = $_POST['confirm_Password'];
-
+        $posts[11] = $_POST['staff_number'];
 
 
 
@@ -99,26 +99,6 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     }
 
-   /* if(isset($_POST['insert']))
-    {
-        $data = getPosts();
-        $insert_Query = "INSERT INTO `users`(`first_name`, `last_name`, `id_number`,`email_address`, `gender`,`phone_number`, `job_title`, `faculty`, `password`, `confirm_Password`) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]')";
-        try{
-            $insert_Result = mysqli_query($connect, $insert_Query);
-                if($insert_Result)
-                {
-                    if(mysqli_affected_rows($connect) > 0)
-                    {
-                        echo 'Data Inserted';
-                    }else{
-                        echo 'Data not inserted ';
-                    }
-                }
-        }catch(Exception $ex){
-            echo 'Error Insert'.$ex->getMessage();
-        }
-    }
-*/
     if(isset($_POST['delete']))
     {
 
@@ -190,7 +170,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     {
 
         $data = getPosts();
-        $insert_Query = "INSERT INTO `staff`(`staff_number`) VALUES ('$data[1]')";
+        $insert_Query = "INSERT INTO `staff`(`staff_number`) VALUES ('$data[11]')";
 
         try{
 
@@ -199,7 +179,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 if($insert_Result)
                 {
 
-                    if(mysqli_affected_rows($connect) > 0)
+                    if(mysqli_affected_rows($connect) < 0)
                     {
 
                         echo 'Staff number successfully inserted';

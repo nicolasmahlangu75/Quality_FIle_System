@@ -284,6 +284,10 @@
 
 16 APRIL 2020
 
-
+	
+	I was still busy with merging other parts of the project into one complete project. I did some checking up on hashing the password, and also test if it works or not. I managed to successfully hash the password, as well as validating the password and the staff number. 
 
 17 APRIL 2020
+
+
+	I had to take a video of our current progress, and submit it to our team leaders for evaluation. I also downloaded the required recording equipment for me to record the video. I managed to send the recording via e-mail to our team leaders.

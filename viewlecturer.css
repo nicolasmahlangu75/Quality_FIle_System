@@ -1,0 +1,69 @@
+body{
+
+  font-family: Source Sans Pro;
+  background: #282828;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 7s ease infinite;
+
+}
+
+#columns{
+
+    font-size: 24px;
+
+}
+
+@-webkit-keyframes Gradient {
+
+  0%{
+
+      background-position: 0% 50%
+
+  }
+
+  50%{
+
+    background-position: 100% 50%
+
+
+  }
+
+  100%{
+
+    background-position: 0% 50%
+
+  }
+
+}
+
+@keyframes aaa{
+
+    0%{
+
+      left: -110%;
+      top: 90%;
+
+    }
+
+    50%{
+
+      left: 10%;
+      top: -30%;
+
+    }
+
+    100%{
+
+      top: -10%;
+      left: -10%;
+
+    }
+
+}
+
+.container{
+
+    top: 100px;
+
+}
