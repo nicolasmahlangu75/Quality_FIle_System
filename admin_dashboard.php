@@ -71,7 +71,7 @@
 		<div class="main-content">
 
         <div class="title">
-  				Analytics
+  				Overall Analysis
   			</div>
 
       </div>
@@ -80,7 +80,7 @@
 
         <div class="widget">
 
-          <div class="title">Number of views</div>
+          <div class="title">Number of users</div>
 
           <div class="chart">
                     <?php include_once 'connection.php';
