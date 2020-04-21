@@ -124,9 +124,7 @@
               </select><br><br>
 
     <input type="password" name="password" id="name" placeholder="Password"><br><br>
-    <input type="checkbox" onclick="myFunction()">Show password
     <input type="password" name="conPas" id="name" placeholder="Confirm Password"><br><br><br>
-
     <input type ="checkbox" id = "check"><span id ="check" required>I agree to all terms and conditions.</span><br><br>
     <button type="submit" name ="btn-submit" class="btn-register">CREATE  NEW ACCOUNT</button><br><br>
 

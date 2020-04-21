@@ -27,14 +27,15 @@
 
 	<p>
 	<label> Password</label>
-	<input type="password" id="password" name="password" />
+	<input type="password" id="loginPwdChange" name="password" />
 	</p>
-
 	<p>
 
 	   <input type="submit" id="btn" class="login-btn" value="LOGIN" />
 
   </p>
+
+  <script scr = "showpassword.js"></script>
 
   <p>
    <a href="adminlogin.php">Admin-Login</a>
