@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2020 at 02:01 AM
+-- Generation Time: Apr 21, 2020 at 10:32 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -88,7 +88,14 @@ INSERT INTO `staff` (`staff_code`, `staff_number`) VALUES
 (22, 21017),
 (23, 21018),
 (24, 21019),
-(25, 21020);
+(25, 21020),
+(26, 21022),
+(27, 21022),
+(28, 21023),
+(29, 0),
+(31, 21024),
+(32, 21024),
+(33, 21024);
 
 -- --------------------------------------------------------
 
@@ -137,14 +144,15 @@ INSERT INTO `users` (`user_id`, `staff_number`, `first_name`, `last_name`, `id_n
 (374, '21006', 'Nicholas', 'Mahlangu', '9108245703080', 'nicki@gmail.com', 'Male', '0788289551', 'Lecturer', 'HUMANITIES', 'password'),
 (375, '21007', 'Nicholas', 'Mahlangu', '9008245703080', 'nic@gmail.com', 'Male', '0787289551', 'Lecturer', 'ARTS AND DESIGN', ''),
 (376, '21008', 'Nicholas', 'Mahlangu', '9808245703080', 'mahlangu@gmail.com', 'Male', '0787289552', 'Lecturer', 'ARTS AND DESIGN', ''),
-(377, '21009', 'Nicolette', 'Smith', '8905235703085', 'nicoleS@gmail.com', 'Female', '0798070071', 'Professor', 'Science', 'nicolete'),
+(377, '21009', 'Nicole', 'Smith', '8905235703085', 'nicoleS@gmail.com', 'Male', '0798070071', 'Lecturer', 'ICT', 'nicole'),
 (378, '21011', 'Elsie', 'Magoba', '8404075703084', 'elsiem@gmail.com', 'Female', '0767351513', 'Lecturer', 'ENGINEERING AND THE BUILDING ENVIRONMENT', '34afc92e21cc0c0fe90e6992e520fe54375f9355'),
 (379, '21012', 'Elsie', 'Magoba', '8204075703084', 'elsiema@gmail.com', 'Female', '0767351514', 'Lecturer', 'MANAGEMENT SCIENCE', 'b1c1d8736f20db3fb6c1c66bb1455ed43909f0d8'),
 (382, '21013', 'Kate', 'Magoba', '8604075703084', 'magobak@gmail.com', 'Female', '0747351514', 'Lecturer', 'ICT', '44844b8aa9d746a5d4c101a588644394115d190f'),
-(385, '21014', 'Kate', 'Magoba', '8004075703084', 'magoba@gmail.com', 'Female', '0747351518', 'Lecturer', 'ICT', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(385, '21014', 'Nick', 'Mahlangu', '8809055703080', 'nickm@gmail.com', 'Male', '0711218836', 'Professor', 'Science', 'nick'),
 (388, '21017', 'Simon', 'Maluleka', '7809165703080', 'smaluleka@54645.com', 'Male', '0663648969', 'Professor', 'HUMANITIES', '5f4dcc3b5aa765d61d8327deb882cf99'),
 (390, '21019', 'Mallam', 'Mutikane', '8809055703080', 'mallamT@outlook.com', 'Male', '0670345898', 'Lecturer', 'ARTS AND DESIGN', '5f4dcc3b5aa765d61d8327deb882cf99'),
-(391, '21020', 'Nicholas', 'Mahlangu', '8809055703082', 'nicolasmahlangu75@gmail.com', '-Select-', '0624457716', 'Lecturer', 'ECONOMICS AND FINANCE', '5f4dcc3b5aa765d61d8327deb882cf99');
+(391, '21020', 'Nicholas', 'Mahlangu', '8809055703080', 'nicolasmahlangu75@gmail.com', 'Female', '0624457716', 'Lecturer', 'ARTS AND DESIGN', 'nick'),
+(392, '21022', 'Basimane', 'Mokala', '9607265703080', 'basimaneM@gmail.com', 'Male', '0798070072', 'Lecturer', 'ECONOMICS AND FINANCE', '5f4dcc3b5aa765d61d8327deb882cf99');
 
 --
 -- Indexes for dumped tables
@@ -194,13 +202,13 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_code` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `staff_code` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=392;
+  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=393;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
