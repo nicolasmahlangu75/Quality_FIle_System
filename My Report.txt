@@ -287,7 +287,69 @@
 	
 	I was still busy with merging other parts of the project into one complete project. I did some checking up on hashing the password, and also test if it works or not. I managed to successfully hash the password, as well as validating the password and the staff number. 
 
+
 17 APRIL 2020
 
 
-	I had to take a video of our current progress, and submit it to our team leaders for evaluation. I also downloaded the required recording equipment for me to record the video. I managed to send the recording via e-mail to our team leaders.
+	I had to take a video of our current progress, and submit it to our team leaders for evaluation. I also downloaded the required recording tool(s) for me to record the video. 
+	I managed to send the recording via e-mail to our team leaders.
+
+
+20 APRIL 2020
+
+
+	I moved to another task on our project, which is the password recovery via email. I started with it immediately, but didn't manage to finish it on the same day, so i push all my current work to git.
+
+
+21 APRIL 2020
+
+
+	I continued with the password recovery task, but got stuck on the issue of the password recovery link being sent to a user via e-mail that he/she must input on the system. 
+	I did some research and got an alternative on how to solve my error, then altered my code right away. 
+
+
+22 APRIL 2020
+
+
+	I managed to fix my code and the message with the link was sent, but it didn't reach my mailbox. I did some research again on how to successfully recover a password via e-mail, 
+	found a few videos and started to study them, before i can start implementing their ideas. 
+
+
+23 APRIL 2020
+
+
+	We got a WhatsApp text early in the morning that our Quality File System project has been suspended, they said that our system can only be tested at the ICEP offices. Testing it online is a tough issue, since we have to host it, and hosting it online means that we need TUT's approval. 
+	For us to get the approval, the system must have been tested before, so they suspended our project. So even though we put a lot of efforts in that project, we had to understand. 
+	
+
+24 APRIL 2020
+
+
+	They placed us back to our previous teams, i was taken back to KASIFOODHUB. I asked to be given a task in the project, i had to wait for the whole team of developers to give a brief report of the current progress they made. 
+
+
+27 APRIL 2020
+
+
+	The sprint was updated and a task was handed out to me. I started looking for tutorials for Ionic first before i can even commence with my task.
+
+
+28 APRIL 2020
+
+
+	I started first by installing the required packages for ionic. I managed to include a few buttons since i was given a task to CRUD the menu. 
+
+
+29 APRIL 2020
+
+
+	Ash introduced me to a nice software we could use as team, for communication purposes while coding. 
+	I downloaded the software immediately, and we got to use the software later on that day. Ash shared some light on how to go about doing my task, and used some of his ideas on my task.
+
+
+30 APRIL 2020
+
+
+	I had my code working 
+
+1 APRIL 2020
